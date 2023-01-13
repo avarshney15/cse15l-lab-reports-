@@ -1,2 +1,2 @@
 
-[lab report 1] (lab-report-1.md)
+[lab report 1](lab-report-1.md)
