@@ -33,11 +33,11 @@ As you can see, I wrote '/add-message?s=Hello' after the host URL and Hello was 
 Over here, you can see the line "How are you" being added under hello. The same process happens as the first time. However, this time in the second if statement in the else statment, the second element in the parameter array is "How are you" and it gets concatenated to String s which already has "Hello" stored in it. 
 ## Part 2: Bugs
 In week three of my CSE 15L lab, I created this test for the reverse in place method. 
-'''
-public void testReverseInPlace() {
-    int[] input1 = { 1,2,3,4 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{4,3,2,1 }, input1);
-	}
-'''
+
+····public void testReverseInPlace() {
+····    int[] input1 = { 1,2,3,4 };
+····    ArrayExamples.reverseInPlace(input1);
+····    assertArrayEquals(new int[]{4,3,2,1 }, input1);
+····	}
+
 
