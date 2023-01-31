@@ -47,5 +47,5 @@ However, when I would try the test below it would pass.
     int[] input1 = {0, 0 };
     assertArrayEquals(new int[]{ 0,0}, ArrayExamples.reversed(input1));
   }
-  '''
+ '''
 
