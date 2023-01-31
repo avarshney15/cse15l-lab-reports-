@@ -32,7 +32,7 @@ After you have made the changes complie and run the two files. If you have done 
 As you can see, I wrote '/add-message?s=Hello' after the host URL and Hello was shown on my server page. Here, the handler method is called which reads the whole URI as an arguement. Then, if there is no arguemnt ahead of the backslash, it returns the empty s string. In our case however, there is an arguement after the backslash so, it goes to the first if statemtn which sees that the URI arguement as a whole contains "add-message". Then an array called paramenters is created wherein the URI is split in  2 parts, one ahead and one behind of the equal to sign. The next if statement checks if the first element in the parameters array is "s". If it is "s" then it concatenates the second element of the array to the string along with creating a new line and returns the string. I have another example for you as well. ![Image](howareyou.png)
 Over here, you can see the line "How are you" being added under hello. The same process happens as the first time. However, this time in the second if statement in the else statment, the second element in the parameter array is "How are you" and it gets concatenated to String s which already has "Hello" stored in it. 
 ## Part 2: Bugs
-In week three of my CSE 15L lab, I created this test for the reversed method. 
+In week three of my CSE 15L lab, I created this test which failed for the reversed method. 
 '''
 public void testReverseInPlace() {
     int[] input1 = { 1,2,3,4 };
@@ -40,5 +40,12 @@ public void testReverseInPlace() {
     assertArrayEquals(new int[]{4,3,2,1 }, input1);
 }
 '''
-
+However, when I would try the test below it would pass. 
+'''
+  @Test
+  public void testReversed1() {
+    int[] input1 = {0, 0 };
+    assertArrayEquals(new int[]{ 0,0}, ArrayExamples.reversed(input1));
+  }
+  '''
 
