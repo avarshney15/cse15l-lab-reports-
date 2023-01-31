@@ -28,4 +28,6 @@ class Handler implements URLHandler {
     }
 
 '''
-To add a string to the server, the form of the URL should be '/add-message?s='. I have shown an example below. ![Image](hello-server.png) 
+After you have made the changes complie and run the two files. If you have done so correctly then you will see a link to a local host page, click it. To add a string to the server, the form of the URL should be '/add-message?s='. I have shown an example below. ![Image](hello-server.png) 
+As you can see, I wrote '/add-message?s=Hello' after the host URL and Hello was shown on my server page. Here, the handler method is called which reads the whole URI as an arguement. Then, if there is no arguemnt ahead of the backslash, it returns the empty s string. In our case however, there is an arguement after the backslash so, it goes to the first if statemtn which sees that the URI arguement as a whole contains "add-message". Then an array called paramenters is created wherein the URI is split in  2 parts, one ahead and one behind of the equal to sign. The next if statement checks if the first element in the parameters array is "s". If it is "s" then it concatenates the second element of the array to the string along with creating a new line and returns the string. I have another example for you as well. ![Image](howareyou.png)
+Over here, 
