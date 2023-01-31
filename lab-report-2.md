@@ -26,5 +26,5 @@ class Handler implements URLHandler {
             return "404 Not Found!";
         }
     }
-}
+
 '''
