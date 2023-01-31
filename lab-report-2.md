@@ -47,11 +47,13 @@ However, when I would try the test below it would pass.
     int[] input1 = {0, 0 };
     assertArrayEquals(new int[]{ 0,0}, ArrayExamples.reversed(input1));
   }
- '''
+
+'''
 Here are the outputs of the two tests shown.
 ![image](wrong.png)
 ![image](right.png)
 Here is the old code.
+
 '''
   static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
