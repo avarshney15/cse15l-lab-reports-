@@ -55,7 +55,7 @@ Here are the outputs of the two tests shown.
 Here is the old code.
 
 '''
-  static int[] reversed(int[] arr) {
+static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
     for(int i = 0; i < arr.length; i += 1) {
       arr[i] = newArray[arr.length - i - 1];
@@ -67,7 +67,8 @@ Here is the old code.
   Here is my debugged version of the code.
   
   '''
-    static int[] reversed(int[] arr) {
+  
+  static int[] reversed(int[] arr) {
     int[] newArray = new int[arr.length];
   
     
@@ -76,6 +77,7 @@ Here is the old code.
     }
     return newArray;
   }
+  
   '''
   
   I just had to change one line as initially, the elements of arr were being overwritten by the empty array of newArray, in reverse order. When I flipped this line, the elements of the original arr were being copied in reverse order into the NewArray. 
