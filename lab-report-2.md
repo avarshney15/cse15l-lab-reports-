@@ -1,6 +1,6 @@
 # Lab Report 2
 The topic for this lab report will cover servers and bugs. I teach you how to complete each step as well as tell you about my experience at each step. To help you better understand the steps I will include screenshots as well.
-_____
+
 ## Part 1: Creating Your Web Server
 To create your own basic server, first you must fork [this](https://github.com/ucsd-cse15l-f22/wavelet) repository and open it in VS Code. Then open the NumberServer.java file, make the changes in the handler class as shown below and rename the file to StringServer.java. 
 
