@@ -4,7 +4,8 @@ _____
 ## Part 1: Creating Your Web Server
 To create your own basic server, first you must fork [this](https://github.com/ucsd-cse15l-f22/wavelet) repository and open it in VS Code. Then open the NumberServer.java file, make the changes in the handler class as shown below and rename the file to StringServer.java. 
 '''
-class Handler implements URLHandler {
+
+    class Handler implements URLHandler {
     // The one bit of state on the server: a number that will be manipulated by
     // various requests.
     int num = 0;
@@ -33,20 +34,24 @@ As you can see, I wrote '/add-message?s=Hello' after the host URL and Hello was 
 Over here, you can see the line "How are you" being added under hello. The same process happens as the first time. However, this time in the second if statement in the else statment, the second element in the parameter array is "How are you" and it gets concatenated to String s which already has "Hello" stored in it. 
 ## Part 2: Bugs
 In week three of my CSE 15L lab, I created this test which failed for the reversed method. 
+
 '''
-public void testReverseInPlace() {
-    int[] input1 = { 1,2,3,4 };
-    ArrayExamples.reverseInPlace(input1);
-    assertArrayEquals(new int[]{4,3,2,1 }, input1);
-}
+    public void testReverseInPlace() {
+        int[] input1 = { 1,2,3,4 };
+        ArrayExamples.reverseInPlace(input1);
+        assertArrayEquals(new int[]{4,3,2,1 }, input1);
+    }
 '''
-However, when I would try the test below it would pass. 
+
+However, when I would try the test below it would pass.
+
+
 '''
-  @Test
-  public void testReversed1() {
-    int[] input1 = {0, 0 };
-    assertArrayEquals(new int[]{ 0,0}, ArrayExamples.reversed(input1));
-  }
+    @Test
+    public void testReversed1() {
+        int[] input1 = {0, 0 };
+        assertArrayEquals(new int[]{ 0,0}, ArrayExamples.reversed(input1));
+    }
 
 '''
 Here are the outputs of the two tests shown.
@@ -55,26 +60,27 @@ Here are the outputs of the two tests shown.
 Here is the old code.
 
 '''
-static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
-    for(int i = 0; i < arr.length; i += 1) {
-      arr[i] = newArray[arr.length - i - 1];
+
+    static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
+        for(int i = 0; i < arr.length; i += 1) {
+            arr[i] = newArray[arr.length - i - 1];
     }
     return arr;
-  }
-  '''
+    }
+    '''
   
   Here is my debugged version of the code.
   
   '''
   
-  static int[] reversed(int[] arr) {
-    int[] newArray = new int[arr.length];
+    static int[] reversed(int[] arr) {
+        int[] newArray = new int[arr.length];
   
     
-    for(int i = 0; i < arr.length; i += 1) {
-      newArray[arr.length - i-1] = arr[i];
-    }
+        for(int i = 0; i < arr.length; i += 1) {
+            newArray[arr.length - i-1] = arr[i];
+        }
     return newArray;
   }
   
