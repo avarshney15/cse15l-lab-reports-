@@ -81,7 +81,7 @@ static int[] reversed(int[] arr) {
   '''
   
   I just had to change one line as initially, the elements of arr were being overwritten by the empty array of newArray, in reverse order. When I flipped this line, the elements of the original arr were being copied in reverse order into the NewArray. 
- ## Part 3: My Learning
+## Part 3: My Learning
 During my last lab, I learnt the importance of creating the right tests as some tests with basic values might pass however there may be an issue dealing with the edge cases and dealing with invalid inputs. During the lab, I learnt about the many different types of bugs which can affect my code and the common types of test cases I should run to ensure that I write robust code. 
 
 Thank you for reading my blog post. 
