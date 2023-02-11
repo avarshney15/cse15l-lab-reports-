@@ -36,6 +36,7 @@ Over here, you can see the line "How are you" being added under hello. The same 
 In week three of my CSE 15L lab, I created this test which failed for the reversed method. 
 
 '''
+
     public void testReverseInPlace() {
         int[] input1 = { 1,2,3,4 };
         ArrayExamples.reverseInPlace(input1);
@@ -47,6 +48,7 @@ However, when I would try the test below it would pass.
 
 
 '''
+
     @Test
     public void testReversed1() {
         int[] input1 = {0, 0 };
