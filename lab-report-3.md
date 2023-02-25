@@ -67,7 +67,7 @@ In this example, the type command helped find all of the directories in written_
     OUP/Rybczynski/ch3.txt
 ```
 In this example, "-type f" was used to find all of the files in the folder, including the ones in all of the sub directories. 
-I found this command by searching on google and then finding this website "https://www.computerhope.com/unix/ufind.htm".
+I found this command by searching on google and then finding this [website](https://www.computerhope.com/unix/ufind.htm).
 ## -Printf
 This command helps us print useful information such as the path, owner or size of each file in a directory.
 ```
@@ -88,7 +88,7 @@ cs15lwi23awr
 cs15lwi23awr
 ```
 In this example, we find the user who owns all of the files in the Berk directory. As we are running the command on the ieng6 account and ahve downloaded the directory, cs15lwi23awr is shown as the owner for all these files. 
-I found this command by searching on google and then finding this website "https://www.computerhope.com/unix/ufind.htm".
+I found this command by searching on google and then finding this [website](https://www.computerhope.com/unix/ufind.htm).
 
 ##  -Mtime 
 This command finds the files modified in a certain number of days in a directory.
